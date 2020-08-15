@@ -1,4 +1,6 @@
 const fs = require("fs");
+
+// 读数据库
 const usersString = fs.readFileSync("./db/users.json").toString();
 const usersArray = JSON.parse(usersString);
 console.log(usersArray);

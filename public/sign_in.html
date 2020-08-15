@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>登录</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>注册</title>
   </head>
   <body>
-    <form id="signInForm">
+    <form id="signInForm" method="POST">
       <div>
         <label for=""> 用户名 <input type="text" name="name" /> </label>
       </div>
@@ -34,7 +37,7 @@
         }).then(
           () => {
             alert("登录成功");
-            location.href = "/home.html";
+            location.href = "/sign_in.html";
           },
           () => {}
         );
